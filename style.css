@@ -204,43 +204,11 @@ button:hover {
   display: block;
 }
 
-/* sticky note overlay text */
-.note p {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  font-size: 0.9rem; 
-  line-height: 1.4;
-  text-align: left;
-  color: #222;
-  word-wrap: break-word;
-  font-family: 'Recursive', sans-serif;
-}
-
-/* tablets */
-@media (max-width: 768px) {
-  .note p {
-    font-size: 0.75rem;  /* smaller font */
-    width: 85%;          /* adjust width to fit inside note */
-    top: 25%;
-  }
-}
-
-/* phones */
-@media (max-width: 480px) {
-  .note p {
-    font-size: 0.65rem;  /* even smaller font */
-    width: 90%;          /* almost full width of note */
-    top: 20%;
-    line-height: 1.2;
-  }
-}
 
 
   
 }
+
 
 
 
