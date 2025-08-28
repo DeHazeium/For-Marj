@@ -131,7 +131,7 @@ img {
   top: 30%; /* adjust to align with sticky note */
   left: 40%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 40%;
   font-size: 0.1rem;
   line-height: 1.4;
   text-align: left;
@@ -192,4 +192,5 @@ button:hover {
   
   
 }
+
 
