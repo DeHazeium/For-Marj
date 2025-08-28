@@ -153,34 +153,22 @@ button:hover {
 /* responsiveness tweaks */
 @media (max-width: 768px) {
   #hiddenText {
-    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    font-size: clamp(1.2rem, 4vw, 2rem); /* lowered max */
   }
 
   #hiddenPar,
   .note p {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-  }
-
-  img {
-    max-width: 100%;
+    font-size: clamp(0.6rem, 2vw, 0.9rem); /* lowered min & max */
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 1rem;
-  }
-
   #hiddenText {
-    font-size: clamp(1rem, 6vw, 1.8rem);
-  }
-
-  button {
-    width: 100%;
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 5vw, 1.5rem); /* smaller max */
   }
 
   .note p {
-    font-size: clamp(0.6rem, 3vw, 0.9rem);
+    font-size: clamp(0.5rem, 3vw, 0.8rem); /* tighter range */
   }
 }
+
