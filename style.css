@@ -129,10 +129,10 @@ img {
 .note p {
   position: absolute;
   top: 30%; /* adjust to align with sticky note */
-  left: 40%;
+  left: 20%;
   transform: translateX(-50%);
   width: 80%;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.4;
   text-align: left;
   color: #222;
@@ -241,5 +241,6 @@ button:hover {
 
   
 }
+
 
 
