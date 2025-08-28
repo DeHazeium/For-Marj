@@ -235,10 +235,11 @@ button:hover {
   .note p {
     font-size: 0.7rem;  /* smaller text */
     top: 20%;           /* vertical position tweak */
-    width: 90%;         /* almost full note width */
+    width: 30%;         /* almost full note width */
     line-height: 1.2;
   }
 }
 
   
 }
+
