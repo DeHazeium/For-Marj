@@ -189,26 +189,6 @@ button:hover {
   }
 
 
-  /* sticky note wrapper */
-.note {
-  position: relative;
-  display: inline-block;
-  max-width: 90%;
-  margin: 1rem auto;
-}
-
-/* sticky note images */
-.note img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-
+  
   
 }
-
-
-
-
