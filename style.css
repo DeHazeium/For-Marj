@@ -12,7 +12,6 @@
   font-style: normal;
 }
 
-
 /* base layout */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -39,8 +38,6 @@ body {
   display: none;
 }
 
-
-
 /* all hidden elements start invisible */
 #hiddenText,
 #hiddenImg,
@@ -59,7 +56,6 @@ body {
   pointer-events: none;
 }
 
-
 #hiddenPar,
 #hiddenPar1,
 #hiddenPar2 {
@@ -74,11 +70,11 @@ body {
 
 /* heading + paragraphs */
 #hiddenText {
-  font-size: 3rem;
+  font-size: clamp(1.2rem, 4vw, 3rem);
 }
 
 #hiddenPar {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   line-height: 1.5;
   max-width: 80%;
   margin: 1rem auto;
@@ -94,21 +90,21 @@ img {
 #hiddenImg {
   display: block;
   margin: 1rem auto;
-  width: 250px;   /* adjust size */
-  max-width: 80%;
+  width: 100%;
+  max-width: 250px; /* desktop size limit */
   height: auto;
-  position: relative; /* stays in flow */
+  position: relative;
 }
 
 /* penguin image */
 #hiddenImg1 {
   display: block;
   margin: 1rem auto;
-  width: 180px;   /* adjust size */
-  max-width: 60%;
+  width: 100%;
+  max-width: 180px; /* desktop size limit */
   height: auto;
   position: relative;
-  top: -20px;   /* nudge position upward */
+  top: -20px; 
 }
 
 /* sticky note wrapper */
@@ -128,11 +124,11 @@ img {
 /* overlay text on sticky notes */
 .note p {
   position: absolute;
-  top: 30%; /* adjust to align with sticky note */
+  top: 30%;
   left: 40%;
   transform: translateX(-50%);
-  width: 80%;
-  font-size: 0.9rem;
+  width: 40%;
+  font-size: clamp(0.7rem, 2vw, 1rem);
   line-height: 1.4;
   text-align: left;
   color: #222;
@@ -154,15 +150,15 @@ button:hover {
   background: #385574;
 }
 
-/* responsiveness */
+/* responsiveness tweaks */
 @media (max-width: 768px) {
   #hiddenText {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
   }
 
   #hiddenPar,
   .note p {
-    font-size: 0.85rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
   }
 
   img {
@@ -176,7 +172,7 @@ button:hover {
   }
 
   #hiddenText {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 6vw, 1.8rem);
   }
 
   button {
@@ -185,8 +181,6 @@ button:hover {
   }
 
   .note p {
-    font-size: 0.75rem;
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
   }
-
-  
 }
